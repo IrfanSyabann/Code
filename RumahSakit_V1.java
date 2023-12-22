@@ -84,19 +84,19 @@ public class RumahSakit_V1 {
         //Code Diskon
         if ((menginap > 1) && (menginap < 5)) {
             diskon = (biayaK * 10) / 100;
-            KetDiskon = "10%";
+            KetDiskon = "10% (Dari Biaya Kamar)";
         } else if ((menginap > 4) && (menginap < 7)) {
             diskon = (biayaK * 20) / 100;
-            KetDiskon = "20%";
+            KetDiskon = "20% (Dari Biaya Kamar)";
         } else if ((menginap > 6) && (menginap < 9)) {
             diskon = (biayaK * 30) / 100;
-            KetDiskon = "30%";
+            KetDiskon = "30% (Dari Biaya Kamar)";
         } else if ((menginap > 8) && (menginap < 11)) {
             diskon = (biayaK * 40) / 100;
-            KetDiskon = "40%";
+            KetDiskon = "40% (Dari Biaya Kamar)";
         } else if (menginap > 10) {
             diskon = (biayaK * 50) / 100;
-            KetDiskon = "50%";
+            KetDiskon = "50% (Dari Biaya Kamar)";
         } else {
             System.out.println("Anda Tidak Mendapatkan Diskon");
         }
@@ -138,7 +138,7 @@ public class RumahSakit_V1 {
         System.out.println("Biaya Kamar : Rp." + kamarKoma);
         System.out.println("Nama Dokter : " + namaD);
         System.out.println("Biaya Pemeriksaan : Rp." + PemeriksaanKoma);
-        System.out.println("Diskon : " + KetDiskon + " (Dari Biaya Kamar)");
+        System.out.println("Diskon : " + KetDiskon);
         System.out.println("Total Bayar : Rp." + hasilKoma);
     }
 }
